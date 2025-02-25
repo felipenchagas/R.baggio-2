@@ -7,6 +7,11 @@
 .font-medium{font-weight:400;}
 /**//**/header .stick-fixed{position:absolute !important;top:0;left:0;}
 .clearlist, .clearlist li{list-style:none;padding:0;margin:0;background:none;}
+p {
+  text-align: justify;  /* Alinha o texto em ambas as margens */
+  text-indent: 2em;     /* Espaço no início da primeira linha do parágrafo */
+}
+
 html, body{overflow-x:hidden;-webkit-font-smoothing:antialiased;}
 html.fancybox-lock{overflow:hidden;}
 body{overflow-x:hidden;}
