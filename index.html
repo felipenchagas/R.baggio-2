@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<htsml lang="pt-BR">
+<html lang="pt-BR">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 <title>Baggio portas e pisos Curitiba e Chapecó</title>
@@ -109,7 +109,7 @@
                     <ul>
                       <li><a href="portas-internas"><span>Internas</span></a></li>
                       <li><a href="portas-externas"><span>Externas</span></a></li>
-                      <li><a href="portas-internas-ecoflex-cores"><span>Cores</span></a></li>
+                      <li><a href="portas-internas-ecoflex-cores"><span>Cores</span></a></li><li><a href="portas-externas-3d"><span>Externas 3d</span></a></li>
                     </ul>
                   </li>
                   <li class="mn-sub-multi"><a class="mn-group-title">Pisos Durafloor</a>
@@ -210,7 +210,159 @@
         </div>
         <!-- ! slider-info-->
       </div>
-      <!-- page section-->
+<!-- gallery section – VERSATILIDADE -->
+<section class="small-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h6 class="title-section-top font-4">Diversas aplicações</h6>
+        <h2 class="title-section">
+          <span>Versatilidade</span> em Portas e Pisos
+        </h2>
+        <div class="cws_divider mb-25 mt-5"></div>
+        <p>
+          Os produtos da Baggio, sejam portas ou pisos, são a escolha ideal para transformar
+          projetos residenciais e comerciais. Com manutenção adequada, garantem durabilidade
+          e valorizam seu espaço por muitos anos.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <i class="flaticon-suntour-photo title-icon"></i>
+      </div>
+    </div>
+
+    <style>
+      .grid-versatilidade {
+        margin-top: 25px;
+        display: grid;
+        grid-template-columns: 2fr 1.4fr 1.1fr 1.1fr;
+        grid-template-rows: auto 260px;
+        grid-template-areas:
+          "principal secundaria1 secundaria2 secundaria3"
+          "principal interior   interior   interior";
+        gap: 18px;
+      }
+
+      @media (max-width: 991px) {
+        .grid-versatilidade {
+          grid-template-columns: 1fr;
+          grid-template-rows: auto;
+          grid-template-areas:
+            "principal"
+            "secundaria1"
+            "secundaria2"
+            "secundaria3"
+            "interior";
+        }
+      }
+
+      .card-versatilidade {
+        position: relative;
+        overflow: hidden;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        background: #000;
+        cursor: pointer;
+      }
+
+      .card-versatilidade img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.6s ease, opacity 0.3s ease;
+      }
+
+      .card-versatilidade:hover img {
+        transform: scale(1.04);
+        opacity: 0.96;
+      }
+
+      .card-versatilidade::after {
+        content: attr(data-caption);
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 8px 14px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #fff;
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.55),
+          rgba(0, 0, 0, 0)
+        );
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+      }
+
+      .card-versatilidade.principal {
+        grid-area: principal;
+      }
+
+      .card-versatilidade.secundaria1 {
+        grid-area: secundaria1;
+      }
+
+      .card-versatilidade.secundaria2 {
+        grid-area: secundaria2;
+      }
+
+      .card-versatilidade.secundaria3 {
+        grid-area: secundaria3;
+      }
+
+      .card-versatilidade.interior {
+        grid-area: interior;
+      }
+    </style>
+
+    <div class="grid-versatilidade">
+      <!-- Casa principal grande -->
+      <a href="img/novas/1.jpg"
+         class="fancy card-versatilidade principal"
+         data-caption="Casa contemporânea com porta de entrada em madeira nobre">
+        <img src="img/novas/1.jpg"
+             alt="Casa moderna com porta de madeira Baggio portas e pisos">
+      </a>
+
+      <!-- Fachada 2 -->
+      <a href="img/novas/2.jpg"
+         class="fancy card-versatilidade secundaria1"
+         data-caption="Fachada clean integrando portas e esquadrias em perfeita harmonia">
+        <img src="img/novas/2.jpg"
+             alt="Fachada clean com porta de entrada Baggio">
+      </a>
+
+      <!-- Porta preta em destaque -->
+      <a href="img/novas/Baggio_Casas-54.jpg"
+         class="fancy card-versatilidade secundaria2"
+         data-caption="Porta de entrada em destaque valorizando o volume da fachada">
+        <img src="img/novas/Baggio_Casas-54.jpg"
+             alt="Porta de entrada em destaque em fachada contemporânea">
+      </a>
+
+      <!-- Casa com jardim frontal -->
+      <a href="img/novas/Baggio_Casas-55.jpg"
+         class="fancy card-versatilidade secundaria3"
+         data-caption="Residência com porta de entrada integrada ao paisagismo">
+        <img src="img/novas/Baggio_Casas-55.jpg"
+             alt="Casa com porta integrada ao paisagismo frontal">
+      </a>
+
+      <!-- Interior com escada e porta -->
+      <a href="img/novas/5.jpg"
+         class="fancy card-versatilidade interior"
+         data-caption="Ambiente interno integrado com porta de entrada e escada em vidro">
+        <img src="img/novas/5.jpg"
+             alt="Ambiente interno com porta de madeira e escada em vidro">
+      </a>
+    </div>
+  </div>
+</section>
+<!-- /gallery section -->
+
+
       <section class="page-section pb-0">
   <div class="container">
     <div class="row">

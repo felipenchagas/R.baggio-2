@@ -114,7 +114,7 @@
                     <ul>
                       <li><a href="portas-internas"><span>Internas</span></a></li>
                       <li><a href="portas-externas"><span>Externas</span></a></li>
-                      <li><a href="portas-internas-ecoflex-cores"><span>Cores</span></a></li>
+                      <li><a href="portas-internas-ecoflex-cores"><span>Cores</span></a></li><li><a href="portas-externas-3d"><span>Externas 3d</span></a></li>
                     </ul>
                   </li>
                   <li class="mn-sub-multi"><a class="mn-group-title">Pisos Durafloor</a>
@@ -173,82 +173,124 @@
       <div class="container page">
         <div class="row">
 		
-          <!-- content-->
-          <div class="col-md-8">
-		  
-		  
-<div class="carousel-container mt-50 mb-50">
-    <div class="title-carousel clearfix">
-     <h1 class="carousel-heading">Portas Ecoflex cores</h1>
-    </div>
-    <div class="row">
+<div class="col-md-8">
 
-<!-- primeira fileira-->
-<div class="owl-four-item">
-<div class="shop-item">
-    <!-- Shop Image-->
-    <div class="shop-media">
-        <div class="pic">
-            <img src="img/prod/portas-ecoflex-cores/branca.jpg" alt="Portas Ecoflex Branca" style="max-height: 250px;">
+    <style>
+    .section-portas {
+        padding: 50px 0;
+    }
+
+    .section-portas h1 {
+        font-size: 34px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+
+    .section-portas .title-line {
+        width: 60px;
+        height: 3px;
+        background: #c79a3b;
+        margin-bottom: 35px;
+    }
+
+    .grid-portas {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 25px;
+    }
+
+    .card-porta {
+        background: #fff;
+        border-radius: 14px;
+        overflow: hidden;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        transition: all .3s ease;
+    }
+
+    .card-porta:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 40px rgba(0,0,0,0.18);
+    }
+
+    .card-porta img {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        max-height: 260px;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .card-porta .titulo {
+        padding: 12px 15px;
+        font-size: 15px;
+        font-weight: 600;
+        color: #222;
+        text-align: center;
+    }
+
+    .lightbox-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.85);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 999999;
+    }
+
+    .lightbox-overlay img {
+        max-width: 90%;
+        max-height: 90%;
+        border-radius: 10px;
+        box-shadow: 0 0 25px rgba(0,0,0,0.4);
+        animation: fadeIn .25s ease;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: scale(.95); }
+        to   { opacity: 1; transform: scale(1); }
+    }
+    </style>
+
+    <section class="section-portas">
+        <h1>Portas Ecoflex Cores</h1>
+        <div class="title-line"></div>
+
+        <div class="grid-portas">
+
+            <div class="card-porta">
+                <img src="img/prod/portas-ecoflex-cores/branca.jpg" alt="Portas Ecoflex Branca">
+                <div class="titulo">Branca</div>
+            </div>
+
+            <div class="card-porta">
+                <img src="img/prod/portas-ecoflex-cores/noce-amendoa.jpg" alt="Portas Ecoflex Noce Amêndoa">
+                <div class="titulo">Noce Amêndoa</div>
+            </div>
+
+            <div class="card-porta">
+                <img src="img/prod/portas-ecoflex-cores/preta.jpg" alt="Portas Ecoflex Preta">
+                <div class="titulo">Preta</div>
+            </div>
+
+            <div class="card-porta">
+                <img src="img/prod/portas-ecoflex-cores/ipe-roxo.jpg" alt="Portas Ecoflex Ipê Roxo">
+                <div class="titulo">Ipê Roxo</div>
+            </div>
+
         </div>
-        <div class="location">Branca</div>
-    </div>
-    <!-- Shop Content-->
+    </section>
 
-    <div class="link"> 
-        <a href="img/prod/portas-ecoflex-cores/branca.jpg" class="fancy"><i class="fa fa-expand"></i></a>
+    <div class="lightbox-overlay" id="lightbox">
+        <img id="lightbox-img">
     </div>
-</div>
 
-<div class="shop-item">
-    <!-- Shop Image-->
-    <div class="shop-media">
-        <div class="pic">
-            <img src="img/prod/portas-ecoflex-cores/noce-amendoa.jpg" alt="Portas Ecoflex Noce Amêndoa" style="max-height: 250px;">
-        </div>
-        <div class="location">Cinza</div>
-    </div>
-    <!-- Shop Content-->
+    <!-- daqui pra baixo mantém igual: tabs, textos, etc -->
 
-    <div class="link"> 
-        <a href="img/prod/portas-ecoflex-cores/noce-amendoa.jpg" class="fancy"><i class="fa fa-expand"></i></a>
-    </div>
-</div>
-
-<div class="shop-item">
-    <!-- Shop Image-->
-    <div class="shop-media">
-        <div class="pic">
-            <img src="img/prod/portas-ecoflex-cores/preta.jpg" alt="Portas Ecoflex cores 3" style="max-height: 250px;">
-        </div>
-        <div class="location">Preta</div>
-    </div>
-    <!-- Shop Content-->
-
-    <div class="link"> 
-        <a href="img/prod/portas-ecoflex-cores/preta.jpg" class="fancy"><i class="fa fa-expand"></i></a>
-    </div>
-</div>
-
-<div class="shop-item">
-    <!-- Shop Image-->
-    <div class="shop-media">
-        <div class="pic">
-            <img src="img/prod/portas-ecoflex-cores/ipe-roxo.jpg" alt="Portas Ecoflex IPÊ ROXO" style="max-height: 250px;">
-        </div>
-        <div class="location">Ipê Roxo</div>
-    </div>
-    <!-- Shop Content-->
-
-    <div class="link"> 
-        <a href="img/prod/portas-ecoflex-cores/ipe-roxo.jpg" class="fancy"><i class="fa fa-expand"></i></a>
-    </div>
-</div>
-
-</div>
-
-    </div>
-</div>
 
 <div class="main single-product">
 
@@ -301,12 +343,12 @@ Outro ponto importante é a versatilidade de design oferecida pela película PET
 				<div class="shop-item">
                     <!-- Shop Image-->
                     <div class="shop-media">
-                      <div class="pic"><img src="img/prod/internas/internas.jpg" alt="Portas internas"></div>
-                      <div class="location">Portas internas</div>
+                      <div class="pic"><img src="img/prod/internas/internas-classica.jpg" alt="Portas internas"></div><br><br>
+                      <div class="location">Portas Clássicas</div>
                     </div>
                     <!-- Shop Content-->
 
-                    <div class="link"> <a href="img/prod/internas/internas.jpg" class="fancy"><i class="fa fa-expand"></i></a></div>
+                    <div class="link"> <a href="img/prod/internas/internas-classica.jpg" class="fancy"><i class="fa fa-expand"></i></a></div>
                 </div>
                   <!-- product-->
                 
@@ -314,12 +356,12 @@ Outro ponto importante é a versatilidade de design oferecida pela película PET
 				<div class="shop-item">
                     <!-- Shop Image-->
                     <div class="shop-media">
-                      <div class="pic"><img src="img/prod/internas/internas-casa.jpg" alt="Portas internas Casa"></div>
-                      <div class="location">Portas internas</div>
+                      <div class="pic"><img src="img/prod/internas/ecoflex-cores.jpg" alt="Portas internas Casa"></div><br><br>
+                      <div class="location">Portas internas Cores</div>
                     </div>
                     <!-- Shop Content-->
 
-                    <div class="link"> <a href="img/prod/internas/internas-casa.jpg" class="fancy"><i class="fa fa-expand"></i></a></div>
+                    <div class="link"> <a href="img/prod/internas/ecoflex-cores.jpg" class="fancy"><i class="fa fa-expand"></i></a></div>
                 </div>
 
                 </div>
@@ -446,7 +488,18 @@ Outro ponto importante é a versatilidade de design oferecida pela película PET
 
     <!-- ! login popup-->
     <!-- news popup-->
+    <script>
+document.querySelectorAll('.card-porta img').forEach(img => {
+    img.addEventListener('click', () => {
+        document.getElementById('lightbox-img').src = img.src;
+        document.getElementById('lightbox').style.display = 'flex';
+    });
+});
 
+document.getElementById('lightbox').addEventListener('click', () => {
+    document.getElementById('lightbox').style.display = 'none';
+});
+</script>
     <!-- ! news popup-->
     
     <script type="text/javascript" src="js/jquery.min.js"></script>

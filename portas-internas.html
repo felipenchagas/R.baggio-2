@@ -114,7 +114,7 @@
                     <ul>
                       <li><a href="portas-internas"><span>Internas</span></a></li>
                       <li><a href="portas-externas"><span>Externas</span></a></li>
-                      <li><a href="portas-internas-ecoflex-cores"><span>Cores</span></a></li>
+                      <li><a href="portas-internas-ecoflex-cores"><span>Cores</span></a></li><li><a href="portas-externas-3d"><span>Externas 3d</span></a></li>
                     </ul>
                   </li>
                   <li class="mn-sub-multi"><a class="mn-group-title">Pisos Durafloor</a>
@@ -182,6 +182,84 @@
      <h1 class="carousel-heading">Portas internas</h1>
     </div>
     <div class="row">
+<style>
+.section-portas {
+    padding: 50px 0;
+    background: #f3f3f5;
+}
+
+.section-portas h1 {
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.section-portas .title-line {
+    width: 60px;
+    height: 3px;
+    background: #c79a3b;
+    margin-bottom: 35px;
+}
+
+.grid-portas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+}
+
+.card-porta {
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    transition: all .3s ease;
+}
+
+.card-porta:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.18);
+}
+
+.card-porta img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-porta .titulo {
+    padding: 12px 15px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #222;
+    text-align: center;
+}
+
+/* LIGHTBOX */
+.lightbox-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+}
+
+.lightbox-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.4);
+    animation: fadeIn .25s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+</style>
 
             <div class="carousel-container mt-50 mb-50">
               <div class="row">
@@ -190,7 +268,7 @@
 				<div class="shop-item">
                     <!-- Shop Image-->
                     <div class="shop-media">
-                      <div class="pic"><img src="img/prod/internas/ecoflex.jpg" alt="Portas"></div>
+                      <div class="pic"><img src="img/prod/internas/ecoflex.jpg" alt="Portas"></div><br>
                       <div class="location">Portas internas</div>
                     </div>
                     <!-- Shop Content-->
@@ -202,7 +280,7 @@
 				<div class="shop-item">
                     <!-- Shop Image-->
                     <div class="shop-media">
-                      <div class="pic"><img src="img/prod/internas/ecoflex-cores.jpg" alt="Portas internas cores Casa"></div>
+                      <div class="pic"><img src="img/prod/internas/ecoflex-cores.jpg" alt="Portas internas cores Casa"></div><br>
                       <div class="location">Portas internas cores</div>
                     </div>
 
@@ -212,7 +290,7 @@
 				<div class="shop-item">
                     <!-- Shop Image-->
                     <div class="shop-media">
-                      <div class="pic"><img src="img/prod/internas/internas-classica.jpg" alt="Portas internas classica"></div>
+                      <div class="pic"><img src="img/prod/internas/internas-classica.jpg" alt="Portas internas classica"></div><br>
                       <div class="location">Portas internas clássicas</div>
                     </div>
                     <!-- Shop Content-->
@@ -224,7 +302,9 @@
               </div>
             </div>
 
-
+	<div class="lightbox-overlay" id="lightbox">
+    <img id="lightbox-img" src="">
+</div>
 
     </div>
 </div>
@@ -389,6 +469,18 @@ Outro ponto importante é a versatilidade de design oferecida pela película PET
 
     <!-- ! login popup-->
     <!-- news popup-->
+<script>
+document.querySelectorAll('.card-porta img').forEach(img => {
+    img.addEventListener('click', () => {
+        document.getElementById('lightbox-img').src = img.src;
+        document.getElementById('lightbox').style.display = 'flex';
+    });
+});
+
+document.getElementById('lightbox').addEventListener('click', () => {
+    document.getElementById('lightbox').style.display = 'none';
+});
+</script>
 
     <!-- ! news popup-->
     

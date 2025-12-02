@@ -114,7 +114,7 @@
                     <ul>
                       <li><a href="portas-internas"><span>Internas</span></a></li>
                       <li><a href="portas-externas"><span>Externas</span></a></li>
-                      <li><a href="portas-internas-ecoflex-cores"><span>Cores</span></a></li>
+                      <li><a href="portas-internas-ecoflex-cores"><span>Cores</span></a></li><li><a href="portas-externas-3d"><span>Externas 3d</span></a></li>
                     </ul>
                   </li>
                   <li class="mn-sub-multi"><a class="mn-group-title">Pisos Durafloor</a>
@@ -176,101 +176,126 @@
           <!-- content-->
           <div class="col-md-8">
 		  
-		  
-<div class="carousel-container mt-50 mb-50">
-    <div class="title-carousel clearfix">
-     <h1 class="carousel-heading">Portas classicas</h1>
-    </div>
-    <div class="row">
+		  <style>
+.section-portas {
+    padding: 50px 0;
+}
 
-<!-- primeira fileira-->
-<div class="owl-four-item">
-<div class="shop-item">
-    <!-- Shop Image-->
-    <div class="shop-media">
-        <div class="pic">
-            <img src="img/prod/portas-classicas/ref-712-duplo-friso.png" alt="Portas classicas Ref 712 Duplo Friso" style="max-height: 250px;">
+.section-portas h1 {
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.section-portas .title-line {
+    width: 60px;
+    height: 3px;
+    background: #c79a3b;
+    margin-bottom: 35px;
+}
+
+.grid-portas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+}
+
+.card-porta {
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    transition: all .3s ease;
+}
+
+.card-porta:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.18);
+}
+
+.card-porta img {
+    width: auto;          /* deixa a largura ajustar sozinha */
+    max-width: 100%;      /* não passa da largura do card */
+    height: auto;         /* altura proporcional */
+    max-height: 260px;    /* limite pra não ficar gigante */
+    object-fit: contain;  /* MOSTRA a imagem inteira, sem cortar */
+    display: block;
+    margin: 0 auto;       /* centraliza dentro do card */
+}
+
+
+.card-porta .titulo {
+    padding: 12px 15px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #222;
+    text-align: center;
+}
+
+/* LIGHTBOX */
+.lightbox-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+}
+
+.lightbox-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.4);
+    animation: fadeIn .25s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+</style>
+
+<section class="section-portas">
+    <h1>Portas Clássicas</h1>
+    <div class="title-line"></div>
+
+    <div class="grid-portas">
+
+        <div class="card-porta">
+            <img src="img/prod/portas-classicas/ref-712-duplo-friso.png" alt="Ref 712 Duplo Friso">
+            <div class="titulo">Ref 712 Duplo Friso</div>
         </div>
-        <div class="location">Ref 712 Duplo Friso</div>
-    </div>
-    <!-- Shop Content-->
 
-    <div class="link"> 
-        <a href="img/prod/portas-classicas/ref-712-duplo-friso.png" class="fancy"><i class="fa fa-expand"></i></a>
-    </div>
-</div>
-
-<div class="shop-item">
-    <!-- Shop Image-->
-    <div class="shop-media">
-        <div class="pic">
-            <img src="img/prod/portas-classicas/ref-moldura-002.png" alt="Portas classicas Ref Moldura 002" style="max-height: 250px;">
+        <div class="card-porta">
+            <img src="img/prod/portas-classicas/ref-moldura-002.png" alt="Ref Moldura 002">
+            <div class="titulo">Ref Moldura 002</div>
         </div>
-        <div class="location">Ref Moldura 002</div>
-    </div>
-    <!-- Shop Content-->
 
-    <div class="link"> 
-        <a href="img/prod/portas-classicas/ref-moldura-002.png" class="fancy"><i class="fa fa-expand"></i></a>
-    </div>
-</div>
-
-<div class="shop-item">
-    <!-- Shop Image-->
-    <div class="shop-media">
-        <div class="pic">
-            <img src="img/prod/portas-classicas/ref-712-duplo-friso.png" alt="Portas classicas Ref 712 Duplo Friso" style="max-height: 250px;">
+        <div class="card-porta">
+            <img src="img/prod/portas-classicas/ref-712-duplo-friso.png" alt="Ref 712 Duplo Friso">
+            <div class="titulo">Ref 712 Duplo Friso</div>
         </div>
-        <div class="location">Ref 712 Duplo Friso</div>
-    </div>
-    <!-- Shop Content-->
 
-    <div class="link"> 
-        <a href="img/prod/portas-classicas/ref-712-duplo-friso.png" class="fancy"><i class="fa fa-expand"></i></a>
-    </div>
-</div>
-
-<div class="shop-item">
-    <!-- Shop Image-->
-    <div class="shop-media">
-        <div class="pic">
-            <img src="img/prod/portas-classicas/ref-moldura-004.png" alt="Portas classicas 4" style="max-height: 250px;">
+        <div class="card-porta">
+            <img src="img/prod/portas-classicas/ref-moldura-004.png" alt="Ref CL04">
+            <div class="titulo">Ref CL04</div>
         </div>
-        <div class="location">Ref CL04</div>
-    </div>
-    <!-- Shop Content-->
 
-    <div class="link"> 
-        <a href="img/prod/portas-classicas/ref-moldura-004.png" class="fancy"><i class="fa fa-expand"></i></a>
-    </div>
-</div>
-
-</div>
-
-
-<!-- segunda fileira-->
-<div class="owl-four-item">
-<div class="shop-item">
-    <!-- Shop Image-->
-    <div class="shop-media">
-        <div class="pic">
-            <img src="img/prod/portas-classicas/ref-moldura-001.png" alt="Portas classicas Ref Moldura 001" style="max-height: 250px;">
+        <div class="card-porta">
+            <img src="img/prod/portas-classicas/ref-moldura-001.png" alt="Ref Moldura 001">
+            <div class="titulo">Ref Moldura 001</div>
         </div>
-        <div class="location">Ref Moldura 001</div>
-    </div>
-    <!-- Shop Content-->
-
-    <div class="link"> 
-        <a href="img/prod/portas-classicas/ref-moldura-001.png" class="fancy"><i class="fa fa-expand"></i></a>
-    </div>
-</div>
-
-
-</div>
-
 
     </div>
+</section>
+<div class="lightbox-overlay" id="lightbox">
+    <img id="lightbox-img">
 </div>
+
 
 <div class="main single-product">
 
@@ -474,7 +499,19 @@ Outro ponto importante é a versatilidade de design oferecida pela película PET
     <!-- news popup-->
 
     <!-- ! news popup-->
-    
+    <script>
+document.querySelectorAll('.card-porta img').forEach(img => {
+    img.addEventListener('click', () => {
+        document.getElementById('lightbox-img').src = img.src;
+        document.getElementById('lightbox').style.display = 'flex';
+    });
+});
+
+document.getElementById('lightbox').addEventListener('click', () => {
+    document.getElementById('lightbox').style.display = 'none';
+});
+</script>
+
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>

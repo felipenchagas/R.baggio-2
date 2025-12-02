@@ -114,7 +114,7 @@
                     <ul>
                       <li><a href="portas-internas"><span>Internas</span></a></li>
                       <li><a href="portas-externas"><span>Externas</span></a></li>
-                      <li><a href="portas-internas-ecoflex-cores"><span>Cores</span></a></li>
+                      <li><a href="portas-internas-ecoflex-cores"><span>Cores</span></a></li><li><a href="portas-externas-3d"><span>Externas 3d</span></a></li>
                     </ul>
                   </li>
                   <li class="mn-sub-multi"><a class="mn-group-title">Pisos Durafloor</a>
@@ -176,164 +176,173 @@
           <!-- content-->
           <div class="col-md-8">
 		  
-		  
+		  		  <style>
+.section-portas {
+    padding: 50px 0;
+}
+
+.section-portas h1 {
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.section-portas .title-line {
+    width: 60px;
+    height: 3px;
+    background: #c79a3b;
+    margin-bottom: 35px;
+}
+
+.grid-portas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+}
+
+.card-porta {
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    transition: all .3s ease;
+}
+
+.card-porta:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.18);
+}
+
+.card-porta img {
+    width: auto;          /* deixa a largura ajustar sozinha */
+    max-width: 100%;      /* não passa da largura do card */
+    height: auto;         /* altura proporcional */
+    max-height: 260px;    /* limite pra não ficar gigante */
+    object-fit: contain;  /* MOSTRA a imagem inteira, sem cortar */
+    display: block;
+    margin: 0 auto;       /* centraliza dentro do card */
+}
+
+
+.card-porta .titulo {
+    padding: 12px 15px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #222;
+    text-align: center;
+}
+
+/* LIGHTBOX */
+.lightbox-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+}
+
+.lightbox-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.4);
+    animation: fadeIn .25s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+</style>
 <div class="carousel-container mt-50 mb-50">
     <div class="title-carousel clearfix">
      <h1 class="carousel-heading">Portas externas</h1>
     </div>
-    <div class="row">
+<section class="section-portas">
+    <h1>Portas Externas</h1>
+    <div class="title-line"></div>
 
-<!-- primeira fileira-->
-<div class="owl-four-item">
-<div class="shop-item">
-    <!-- Shop Image-->
-    <div class="shop-media">
-        <div class="pic">
-            <img src="img/prod/externas/PR1___ABERTA.jpg" alt="PR1 ABERTA" style="max-height: 250px;">
+    <div class="grid-portas">
+
+        <div class="card-porta">
+            <img src="img/prod/externas/externa-frisada-bbb.png" alt="Externa Frisada BBB">
+            <div class="titulo">Externa Frisada BBB</div>
         </div>
-        <div class="location">PR1 ABERTA</div>
-    </div>
-    <!-- Shop Content-->
 
-    <div class="link"> 
-        <a href="img/prod/externas/PR1___ABERTA.jpg" class="fancy"><i class="fa fa-expand"></i></a>
+        <div class="card-porta">
+            <img src="img/prod/externas/externa-3-frisos-3-cm.png" alt="Externa 3 Frisos 3 cm">
+            <div class="titulo">Externa 3 Frisos 3 cm</div>
+        </div>
+
+        <div class="card-porta">
+            <img src="img/prod/externas/externa-3d-001.png" alt="Externa 3D 001">
+            <div class="titulo">Externa 3D 001</div>
+        </div>
+
+        <div class="card-porta">
+            <img src="img/prod/externas/externa-frisada-15-1.png" alt="Externa Frisada 15 1">
+            <div class="titulo">Externa Frisada 15 1</div>
+        </div>
+
+        <div class="card-porta">
+            <img src="img/prod/externas/PR1___ABERTA.jpg" alt="PR1 ABERTA">
+            <div class="titulo">PR1 ABERTA</div>
+        </div>
+
+        <div class="card-porta">
+            <img src="img/prod/externas/PR1___FECHADA.jpg" alt="PR1 FECHADA">
+            <div class="titulo">PR1 FECHADA</div>
+        </div>
+
+        <div class="card-porta">
+            <img src="img/prod/externas/PR2___ABERTA.jpg" alt="PR2 ABERTA">
+            <div class="titulo">PR2 ABERTA</div>
+        </div>
+
+        <div class="card-porta">
+            <img src="img/prod/externas/PR2___FECHADA.jpg" alt="PR2 FECHADA">
+            <div class="titulo">PR2 FECHADA</div>
+        </div>
+
+        <div class="card-porta">
+            <img src="img/prod/externas/PR3_1.jpg" alt="PR3 1">
+            <div class="titulo">PR3 1</div>
+        </div>
+
+        <div class="card-porta">
+            <img src="img/prod/externas/PR3_2.jpg" alt="PR3 2">
+            <div class="titulo">PR3 2</div>
+        </div>
+
+        <div class="card-porta">
+            <img src="img/prod/externas/PR4_2.jpg" alt="PR4 2">
+            <div class="titulo">PR4 2</div>
+        </div>
+
+        <div class="card-porta">
+            <img src="img/prod/externas/Ref-PR-3-Remake.png" alt="Ref PR 3 Remake">
+            <div class="titulo">Ref PR 3 Remake</div>
+        </div>
+
+        <div class="card-porta">
+            <img src="img/prod/externas/Ref-PR-4-Remake.png" alt="Ref PR 4 Remake">
+            <div class="titulo">Ref PR 4 Remake</div>
+        </div>
+
+        <div class="card-porta">
+            <img src="img/prod/externas/externa-3D-002.png" alt="Externa 3D 002">
+            <div class="titulo">Externa 3D 002</div>
+        </div>
+
     </div>
+</section>
+<div class="lightbox-overlay" id="lightbox">
+    <img id="lightbox-img">
 </div>
-
-<div class="shop-item">
-    <!-- Shop Image-->
-    <div class="shop-media">
-        <div class="pic">
-            <img src="img/prod/externas/PR1___FECHADA.jpg" alt="Portas externas PR1 FECHADA" style="max-height: 250px;">
-        </div>
-        <div class="location">PR1 FECHADA</div>
-    </div>
-    <!-- Shop Content-->
-
-    <div class="link"> 
-        <a href="img/prod/externas/PR1___FECHADA.jpg" class="fancy"><i class="fa fa-expand"></i></a>
-    </div>
-</div>
-
-<div class="shop-item">
-    <!-- Shop Image-->
-    <div class="shop-media">
-        <div class="pic">
-            <img src="img/prod/externas/PR2___ABERTA.jpg" alt="Portas externas PR2 ABERTA" style="max-height: 250px;">
-        </div>
-        <div class="location">PR2 ABERTA</div>
-    </div>
-    <!-- Shop Content-->
-
-    <div class="link"> 
-        <a href="img/prod/externas/PR2___ABERTA.jpg" class="fancy"><i class="fa fa-expand"></i></a>
-    </div>
-</div>
-
-<div class="shop-item">
-    <!-- Shop Image-->
-    <div class="shop-media">
-        <div class="pic">
-            <img src="img/prod/externas/PR2___FECHADA.jpg" alt="Portas externas PR2 FECHADA" style="max-height: 250px;">
-        </div>
-        <div class="location">PR2 FECHADA</div>
-    </div>
-    <!-- Shop Content-->
-
-    <div class="link"> 
-        <a href="img/prod/externas/PR2___FECHADA.jpg" class="fancy"><i class="fa fa-expand"></i></a>
-    </div>
-</div>
-
-</div>
-
-<!-- segunda fileira-->
-<div class="owl-four-item">
-
-    <!-- Item Ref 830 -->
-    <div class="shop-item">
-        <!-- Shop Image-->
-        <div class="shop-media">
-            <div class="pic">
-                <img src="img/prod/externas/PR3_1.jpg" alt="Portas externas PR3 1" style="max-height: 250px;">
-            </div>
-            <div class="location">PR3 1</div>
-        </div>
-        <!-- Shop Content-->
-        <div class="link">
-            <a href="img/prod/externas/PR3_1.jpg" class="fancy"><i class="fa fa-expand"></i></a>
-        </div>
-    </div>
-
-    <!-- Item Ref 832 -->
-    <div class="shop-item">
-        <!-- Shop Image-->
-        <div class="shop-media">
-            <div class="pic">
-                <img src="img/prod/externas/PR3_2.jpg" alt="Portas externas PR3 2" style="max-height: 250px;">
-            </div>
-            <div class="location">PR3 2</div>
-        </div>
-        <!-- Shop Content-->
-        <div class="link">
-            <a href="img/prod/externas/PR3_2.jpg" class="fancy"><i class="fa fa-expand"></i></a>
-        </div>
-    </div>
-
-    <!-- Item Ref 834 -->
-    <div class="shop-item">
-        <!-- Shop Image-->
-        <div class="shop-media">
-            <div class="pic">
-                <img src="img/prod/externas/PR4_2.jpg" alt="Portas externas PR4 2" style="max-height: 250px;">
-            </div>
-            <div class="location">PR4 2</div>
-        </div>
-        <!-- Shop Content-->
-        <div class="link">
-            <a href="img/prod/externas/PR4_2.jpg" class="fancy"><i class="fa fa-expand"></i></a>
-        </div>
-    </div>
-
-    <!-- Item Ref 835 -->
-    <div class="shop-item">
-        <!-- Shop Image-->
-        <div class="shop-media">
-            <div class="pic">
-                <img src="img/prod/externas/Ref-PR-3-Remake.png" alt="Portas externas Ref PR 3 Remake" style="max-height: 250px;">
-            </div>
-            <div class="location">Ref PR 3 Remake</div>
-        </div>
-        <!-- Shop Content-->
-        <div class="link">
-            <a href="img/prod/externas/Ref-PR-3-Remake.png" class="fancy"><i class="fa fa-expand"></i></a>
-        </div>
-    </div>
-</div>
-
-<!-- terceira fileira-->
-<div class="owl-four-item">
-
-    <!-- Item Ref PR1 -->
-    <div class="shop-item">
-        <!-- Shop Image-->
-        <div class="shop-media">
-            <div class="pic">
-                <img src="img/prod/externas/Ref-PR-4-Remake.png" alt="Portas externas Ref PR 4 Remake" style="max-height: 250px;">
-            </div>
-            <div class="location">Ref PR 4 Remake</div>
-        </div>
-        <!-- Shop Content-->
-        <div class="link">
-            <a href="img/prod/externas/Ref-PR-4-Remake.png" class="fancy"><i class="fa fa-expand"></i></a>
-        </div>
-    </div>
-
-
-</div>
-
-
-    </div>
 </div>
 
 <div class="main single-product">
@@ -527,7 +536,18 @@
 
     <!-- ! login popup-->
     <!-- news popup-->
+    <script>
+document.querySelectorAll('.card-porta img').forEach(img => {
+    img.addEventListener('click', () => {
+        document.getElementById('lightbox-img').src = img.src;
+        document.getElementById('lightbox').style.display = 'flex';
+    });
+});
 
+document.getElementById('lightbox').addEventListener('click', () => {
+    document.getElementById('lightbox').style.display = 'none';
+});
+</script>
     <!-- ! news popup-->
     
     <script type="text/javascript" src="js/jquery.min.js"></script>

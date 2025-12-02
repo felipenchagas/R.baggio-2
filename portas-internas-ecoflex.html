@@ -114,7 +114,7 @@
                     <ul>
                       <li><a href="portas-internas"><span>Internas</span></a></li>
                       <li><a href="portas-externas"><span>Externas</span></a></li>
-                      <li><a href="portas-internas-ecoflex-cores"><span>Cores</span></a></li>
+                      <li><a href="portas-internas-ecoflex-cores"><span>Cores</span></a></li><li><a href="portas-externas-3d"><span>Externas 3d</span></a></li>
                     </ul>
                   </li>
                   <li class="mn-sub-multi"><a class="mn-group-title">Pisos Durafloor</a>
@@ -175,384 +175,215 @@
 		
           <!-- content-->
           <div class="col-md-8">
-		  
+<style>
+.section-portas {
+    padding: 50px 0;
+}
+
+.section-portas h1 {
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.section-portas .title-line {
+    width: 60px;
+    height: 3px;
+    background: #c79a3b;
+    margin-bottom: 35px;
+}
+
+.grid-portas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+}
+
+.card-porta {
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    transition: all .3s ease;
+}
+
+.card-porta:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.18);
+}
+
+.card-porta img {
+    width: auto;          /* deixa a largura ajustar sozinha */
+    max-width: 100%;      /* não passa da largura do card */
+    height: auto;         /* altura proporcional */
+    max-height: 260px;    /* limite pra não ficar gigante */
+    object-fit: contain;  /* MOSTRA a imagem inteira, sem cortar */
+    display: block;
+    margin: 0 auto;       /* centraliza dentro do card */
+}
+
+
+.card-porta .titulo {
+    padding: 12px 15px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #222;
+    text-align: center;
+}
+
+/* LIGHTBOX */
+.lightbox-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+}
+
+.lightbox-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.4);
+    animation: fadeIn .25s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+</style>
 		  
 <div class="carousel-container mt-50 mb-50">
     <div class="title-carousel clearfix">
      <h1 class="carousel-heading">Portas em laca ou recobertas em pet / pvc</h1>
     </div>
-    <div class="row">
+<section class="section-portas">
+    <h1>Portas Ecoflex</h1>
+    <div class="title-line"></div>
 
-<!-- terceira fileira-->
-<div class="owl-four-item">
+    <div class="grid-portas">
 
-    <!-- Item Ref 701 -->
-    <div class="shop-item">
-        <!-- Shop Image-->
-        <div class="shop-media">
-            <div class="pic">
-                <img src="img/prod/portas-ecoflex/friso-5-horizontal.png" alt="Portas linha Friso 5 Horizontal" style="max-height: 250px;">
-            </div>
-            <div class="location">Friso 5 Horizontal</div>
+        <div class="card-porta">
+            <img src="img/prod/portas-ecoflex/friso-5-horizontal.png" alt="Portas linha Friso 5 Horizontal">
+            <div class="titulo">Friso 5 Horizontal</div>
         </div>
-        <!-- Shop Content-->
-        <div class="link">
-            <a href="img/prod/portas-ecoflex/friso-5-horizontal.png" class="fancy"><i class="fa fa-expand"></i></a>
+
+        <div class="card-porta">
+            <img src="img/prod/portas-ecoflex/friso-5-vertical.png" alt="Portas Friso 5 Vertical">
+            <div class="titulo">Friso 5 Vertical</div>
         </div>
+
+        <div class="card-porta">
+            <img src="img/prod/portas-ecoflex/interna-nova-01.png" alt="Portas Interna Nova 01">
+            <div class="titulo">Interna Nova 01</div>
+        </div>
+
+        <div class="card-porta">
+            <img src="img/prod/portas-ecoflex/interna-nova-02.png" alt="Portas Interna Nova 02">
+            <div class="titulo">Interna Nova 02</div>
+        </div>
+
+        <div class="card-porta">
+            <img src="img/prod/portas-ecoflex/ref-701-remake.png" alt="Portas Ref 701 Remake">
+            <div class="titulo">Ref 701 Remake</div>
+        </div>
+
+        <div class="card-porta">
+            <img src="img/prod/portas-ecoflex/ref-702-remake.png" alt="Portas Ref 702 Remake">
+            <div class="titulo">Ref 702 Remake</div>
+        </div>
+
+        <div class="card-porta">
+            <img src="img/prod/portas-ecoflex/ref-706-remake.png" alt="Portas Ref 706 Remake">
+            <div class="titulo">Ref 706 Remake</div>
+        </div>
+
+        <div class="card-porta">
+            <img src="img/prod/portas-ecoflex/ref-708-remake.png" alt="Portas Ref 708 Remake">
+            <div class="titulo">Ref 708 Remake</div>
+        </div>
+
+        <div class="card-porta">
+            <img src="img/prod/portas-ecoflex/ref-709-remake.png" alt="Portas Ref 709 Remake">
+            <div class="titulo">Ref 709 Remake</div>
+        </div>
+
+        <div class="card-porta">
+            <img src="img/prod/portas-ecoflex/ref-710-friso-3cm.png" alt="Portas Ref 710 Friso 3cm">
+            <div class="titulo">Ref 710 Friso 3cm</div>
+        </div>
+
+        <div class="card-porta">
+            <img src="img/prod/portas-ecoflex/ref-710-remake.png" alt="Portas Ref 710 Remake">
+            <div class="titulo">Ref 710 Remake</div>
+        </div>
+
+        <div class="card-porta">
+            <img src="img/prod/portas-ecoflex/ref-711-friso-3cm.png" alt="Portas Ref 711 Friso 3cm">
+            <div class="titulo">Ref 711 Friso 3cm</div>
+        </div>
+
+        <div class="card-porta">
+            <img src="img/prod/portas-ecoflex/ref-711-remake.png" alt="Portas Ref 711 Remake">
+            <div class="titulo">Ref 711 Remake</div>
+        </div>
+
+        <div class="card-porta">
+            <img src="img/prod/portas-ecoflex/ref-712-remake.png" alt="Portas Ref 712 Remake">
+            <div class="titulo">Ref 712 Remake</div>
+        </div>
+
+        <div class="card-porta">
+            <img src="img/prod/portas-ecoflex/ref-717-remake.png" alt="Portas Ref 717 Remake">
+            <div class="titulo">Ref 717 Remake</div>
+        </div>
+
+        <div class="card-porta">
+            <img src="img/prod/portas-ecoflex/ref-718-friso-3cm.png" alt="Portas Ref 718 Friso 3cm">
+            <div class="titulo">Ref 718 Friso 3cm</div>
+        </div>
+
+        <div class="card-porta">
+            <img src="img/prod/portas-ecoflex/ref-718-remake.png" alt="Portas Ref 718 Remake">
+            <div class="titulo">Ref 718 Remake</div>
+        </div>
+
+        <div class="card-porta">
+            <img src="img/prod/portas-ecoflex/ref-722-remake.png" alt="Portas Ref 722 Remake">
+            <div class="titulo">Ref 722 Remake</div>
+        </div>
+
+        <div class="card-porta">
+            <img src="img/prod/portas-ecoflex/ref-724-friso-3cm.png" alt="Portas Ref 724 Friso 3cm">
+            <div class="titulo">Ref 724 Friso 3cm</div>
+        </div>
+
+        <div class="card-porta">
+            <img src="img/prod/portas-ecoflex/ref-724-remake.png" alt="Portas Ref 724 Remake">
+            <div class="titulo">Ref 724 Remake</div>
+        </div>
+
+        <div class="card-porta">
+            <img src="img/prod/portas-ecoflex/ref-725-remake.png" alt="Portas Ref 725 Remake">
+            <div class="titulo">Ref 725 Remake</div>
+        </div>
+
+        <div class="card-porta">
+            <img src="img/prod/portas-ecoflex/ref-730-remake.png" alt="Portas Ref 730 Remake">
+            <div class="titulo">Ref 730 Remake</div>
+        </div>
+
     </div>
-
-    <!-- Item Ref 702 -->
-    <div class="shop-item">
-        <!-- Shop Image-->
-        <div class="shop-media">
-            <div class="pic">
-                <img src="img/prod/portas-ecoflex/friso-5-vertical.png" alt="Portas Friso 5 Vertical" style="max-height: 250px;">
-            </div>
-            <div class="location">Friso 5 Vertical</div>
-        </div>
-        <!-- Shop Content-->
-        <div class="link">
-            <a href="img/prod/portas-ecoflex/friso-5-vertical.png" class="fancy"><i class="fa fa-expand"></i></a>
-        </div>
-    </div>
-
-    <!-- Item Ref 706 -->
-    <div class="shop-item">
-        <!-- Shop Image-->
-        <div class="shop-media">
-            <div class="pic">
-                <img src="img/prod/portas-ecoflex/interna-nova-01.png" alt="Portas Interna Nova 01" style="max-height: 250px;">
-            </div>
-            <div class="location">Interna Nova 01</div>
-        </div>
-        <!-- Shop Content-->
-        <div class="link">
-            <a href="img/prod/portas-ecoflex/interna-nova-01.png" class="fancy"><i class="fa fa-expand"></i></a>
-        </div>
-    </div>
-
-    <!-- Item Ref 708 -->
-    <div class="shop-item">
-        <!-- Shop Image-->
-        <div class="shop-media">
-            <div class="pic">
-                <img src="img/prod/portas-ecoflex/interna-nova-02.png" alt="Portas Interna Nova 02" style="max-height: 250px;">
-            </div>
-            <div class="location">Interna Nova 02</div>
-        </div>
-        <!-- Shop Content-->
-        <div class="link">
-            <a href="img/prod/portas-ecoflex/interna-nova-02.png" class="fancy"><i class="fa fa-expand"></i></a>
-        </div>
-    </div>
-
+	<div class="lightbox-overlay" id="lightbox">
+    <img id="lightbox-img">
 </div>
+</section>
 
-<!-- quarta fileira-->
-<div class="owl-four-item">
-
-    <!-- Item Ref 709 -->
-    <div class="shop-item">
-        <!-- Shop Image-->
-        <div class="shop-media">
-            <div class="pic">
-                <img src="img/prod/portas-ecoflex/ref-701-remake.png" alt="Portas Ref 701 Remake" style="max-height: 250px;">
-            </div>
-            <div class="location">Ref 701 Remake</div>
-        </div>
-        <!-- Shop Content-->
-        <div class="link">
-            <a href="img/prod/portas-ecoflex/ref-701-remake.png" class="fancy"><i class="fa fa-expand"></i></a>
-        </div>
-    </div>
-
-    <!-- Item Ref 710 -->
-    <div class="shop-item">
-        <!-- Shop Image-->
-        <div class="shop-media">
-            <div class="pic">
-                <img src="img/prod/portas-ecoflex/ref-702-remake.png" alt="Portas Ref 702 Remake.png" style="max-height: 250px;">
-            </div>
-            <div class="location">Ref 702 Remake.png</div>
-        </div>
-        <!-- Shop Content-->
-        <div class="link">
-            <a href="img/prod/portas-ecoflex/ref-702-remake.png" class="fancy"><i class="fa fa-expand"></i></a>
-        </div>
-    </div>
-
-    <!-- Item Ref 711 -->
-    <div class="shop-item">
-        <!-- Shop Image-->
-        <div class="shop-media">
-            <div class="pic">
-                <img src="img/prod/portas-ecoflex/ref-706-remake.png" alt="Portas Ref 706 Remake.png" style="max-height: 250px;">
-            </div>
-            <div class="location">Ref 706 Remake</div>
-        </div>
-        <!-- Shop Content-->
-        <div class="link">
-            <a href="img/prod/portas-ecoflex/ref-706-remake.png" class="fancy"><i class="fa fa-expand"></i></a>
-        </div>
-    </div>
-
-    <!-- Item Ref 712 -->
-    <div class="shop-item">
-        <!-- Shop Image-->
-        <div class="shop-media">
-            <div class="pic">
-                <img src="img/prod/portas-ecoflex/ref-708-remake.png" alt="Portas Ref 708 Remake" style="max-height: 250px;">
-            </div>
-            <div class="location">Ref 708 Remake</div>
-        </div>
-        <!-- Shop Content-->
-        <div class="link">
-            <a href="img/prod/portas-ecoflex/ref-708-remake.png" class="fancy"><i class="fa fa-expand"></i></a>
-        </div>
-    </div>
-
-</div>
-
-<!-- quinta fileira-->
-<div class="owl-four-item">
-
-    <!-- Item Ref 713 -->
-    <div class="shop-item">
-        <!-- Shop Image-->
-        <div class="shop-media">
-            <div class="pic">
-                <img src="img/prod/portas-ecoflex/ref-709-remake.png" alt="Portas Ref 709 Remake" style="max-height: 250px;">
-            </div>
-            <div class="location">Ref 709 Remake</div>
-        </div>
-        <!-- Shop Content-->
-        <div class="link">
-            <a href="img/prod/portas-ecoflex/ref-709-remake.png" class="fancy"><i class="fa fa-expand"></i></a>
-        </div>
-    </div>
-
-    <!-- Item Ref 714 -->
-    <div class="shop-item">
-        <!-- Shop Image-->
-        <div class="shop-media">
-            <div class="pic">
-                <img src="img/prod/portas-ecoflex/ref-710-friso-3cm.png" alt="Portas Ref 710 Friso 3cm" style="max-height: 250px;">
-            </div>
-            <div class="location">Ref 710 Friso 3cm</div>
-        </div>
-        <!-- Shop Content-->
-        <div class="link">
-            <a href="img/prod/portas-ecoflex/ref-710-friso-3cm.png" class="fancy"><i class="fa fa-expand"></i></a>
-        </div>
-    </div>
-
-    <!-- Item Ref 715 -->
-    <div class="shop-item">
-        <!-- Shop Image-->
-        <div class="shop-media">
-            <div class="pic">
-                <img src="img/prod/portas-ecoflex/ref-710-remake.png" alt="Portas Ref 710 Remake" style="max-height: 250px;">
-            </div>
-            <div class="location">Ref 710 Remake</div>
-        </div>
-        <!-- Shop Content-->
-        <div class="link">
-            <a href="img/prod/portas-ecoflex/ref-710-remake.png" class="fancy"><i class="fa fa-expand"></i></a>
-        </div>
-    </div>
-
-    <!-- Item Ref 716 -->
-    <div class="shop-item">
-        <!-- Shop Image-->
-        <div class="shop-media">
-            <div class="pic">
-                <img src="img/prod/portas-ecoflex/ref-711-friso-3cm.png" alt="Portas Ref 711 Friso 3cm" style="max-height: 250px;">
-            </div>
-            <div class="location">Ref 711 Friso 3cm</div>
-        </div>
-        <!-- Shop Content-->
-        <div class="link">
-            <a href="img/prod/portas-ecoflex/ref-711-friso-3cm.png" class="fancy"><i class="fa fa-expand"></i></a>
-        </div>
-    </div>
-
-</div>
-
-<!-- sexta fileira-->
-<div class="owl-four-item">
-
-    <!-- Item Ref 717 -->
-    <div class="shop-item">
-        <!-- Shop Image-->
-        <div class="shop-media">
-            <div class="pic">
-                <img src="img/prod/portas-ecoflex/ref-711-remake.png" alt="Portas linha Ref 711 Remake" style="max-height: 250px;">
-            </div>
-            <div class="location">Ref 711 Remake</div>
-        </div>
-        <!-- Shop Content-->
-        <div class="link">
-            <a href="img/prod/portas-ecoflex/ref-711-remake.png" class="fancy"><i class="fa fa-expand"></i></a>
-        </div>
-    </div>
-
-    <!-- Item Ref 718 -->
-
-    <!-- Item Ref 724 -->
-    <div class="shop-item">
-        <!-- Shop Image-->
-        <div class="shop-media">
-            <div class="pic">
-                <img src="img/prod/portas-ecoflex/ref-712-remake.png" alt="Portas Ref 712 Remake" style="max-height: 250px;">
-            </div>
-            <div class="location">Ref 712 Remake</div>
-        </div>
-        <!-- Shop Content-->
-        <div class="link">
-            <a href="img/prod/portas-ecoflex/ref-712-remake.png" class="fancy"><i class="fa fa-expand"></i></a>
-        </div>
-    </div>
-	
-    <!-- Item Ref 725 -->
-    <div class="shop-item">
-        <!-- Shop Image-->
-        <div class="shop-media">
-            <div class="pic">
-                <img src="img/prod/portas-ecoflex/ref-717-remake.png" alt="Portas Ref 717 Remake" style="max-height: 250px;">
-            </div>
-            <div class="location">Ref 717 Remake</div>
-        </div>
-        <!-- Shop Content-->
-        <div class="link">
-            <a href="img/prod/portas-ecoflex/ref-717-remake.png" class="fancy"><i class="fa fa-expand"></i></a>
-        </div>
-    </div>
-	
-    <!-- Item Ref 730 -->
-    <div class="shop-item">
-        <!-- Shop Image-->
-        <div class="shop-media">
-            <div class="pic">
-                <img src="img/prod/portas-ecoflex/ref-718-friso-3cm.png" alt="Portas Ref 718 Friso 3cm" style="max-height: 250px;">
-            </div>
-            <div class="location">Ref 718 Friso 3cm</div>
-        </div>
-        <!-- Shop Content-->
-        <div class="link">
-            <a href="img/prod/portas-ecoflex/ref-718-friso-3cm.png" class="fancy"><i class="fa fa-expand"></i></a>
-        </div>
-    </div>
-
-</div>
-
-<!-- sétima fileira-->
-<div class="owl-four-item">
-
-	
-    <div class="shop-item">
-        <!-- Shop Image-->
-        <div class="shop-media">
-            <div class="pic">
-                <img src="img/prod/portas-ecoflex/ref-718-remake.png" alt="Portas Ref 718 Remake" style="max-height: 250px;">
-            </div>
-            <div class="location">Ref 718 Remake</div>
-        </div>
-        <!-- Shop Content-->
-        <div class="link">
-            <a href="img/prod/portas-ecoflex/ref-718-remake.png" class="fancy"><i class="fa fa-expand"></i></a>
-        </div>
-    </div>
-
-    <!-- Item Ref 730 -->
-    <div class="shop-item">
-        <!-- Shop Image-->
-        <div class="shop-media">
-            <div class="pic">
-                <img src="img/prod/portas-ecoflex/ref-722-remake.png" alt="Portas Ref 722 Remake" style="max-height: 250px;">
-            </div>
-            <div class="location">Ref 722 Remake</div>
-        </div>
-        <!-- Shop Content-->
-        <div class="link">
-            <a href="img/prod/portas-ecoflex/ref-722-remake.png" class="fancy"><i class="fa fa-expand"></i></a>
-        </div>
-    </div>
-	
-    <!-- Item Ref 725 -->
-    <div class="shop-item">
-        <!-- Shop Image-->
-        <div class="shop-media">
-            <div class="pic">
-                <img src="img/prod/portas-ecoflex/ref-724-friso-3cm.png" alt="Portas Ref 724 Friso 3cm" style="max-height: 250px;">
-            </div>
-            <div class="location">Ref 724 Friso 3cm</div>
-        </div>
-        <!-- Shop Content-->
-        <div class="link">
-            <a href="img/prod/portas-ecoflex/ref-724-friso-3cm.png" class="fancy"><i class="fa fa-expand"></i></a>
-        </div>
-    </div>
-	
-    <!-- Item Ref 730 -->
-    <div class="shop-item">
-        <!-- Shop Image-->
-        <div class="shop-media">
-            <div class="pic">
-                <img src="img/prod/portas-ecoflex/ref-724-remake.png" alt="Portas Ref 724 Remake" style="max-height: 250px;">
-            </div>
-            <div class="location">Ref 724 Remakem</div>
-        </div>
-        <!-- Shop Content-->
-        <div class="link">
-            <a href="img/prod/portas-ecoflex/ref-724-remake.png" class="fancy"><i class="fa fa-expand"></i></a>
-        </div>
-    </div>
-
-
-</div>
-
-<!-- oitava fileira-->
-<div class="owl-four-item">
-
-	
-    <div class="shop-item">
-        <!-- Shop Image-->
-        <div class="shop-media">
-            <div class="pic">
-                <img src="img/prod/portas-ecoflex/ref-725-remake.png" alt="Portas Ref 725 Remake" style="max-height: 250px;">
-            </div>
-            <div class="location">Ref 725 Remake</div>
-        </div>
-        <!-- Shop Content-->
-        <div class="link">
-            <a href="img/prod/portas-ecoflex/ref-725-remake.png" class="fancy"><i class="fa fa-expand"></i></a>
-        </div>
-    </div>
-
-    <!-- Item Ref 730 -->
-    <div class="shop-item">
-        <!-- Shop Image-->
-        <div class="shop-media">
-            <div class="pic">
-                <img src="img/prod/portas-ecoflex/ref-730-remake.png" alt="Portas Ref 730 Remake" style="max-height: 250px;">
-            </div>
-            <div class="location">Ref 730 Remake</div>
-        </div>
-        <!-- Shop Content-->
-        <div class="link">
-            <a href="img/prod/portas-ecoflex/ref-730-remake.png" class="fancy"><i class="fa fa-expand"></i></a>
-        </div>
-    </div>
-	
-
-</div>
-
-
-
-
-
-
-    </div>
 </div>
 
 <div class="main single-product">
@@ -751,7 +582,18 @@ Outro ponto importante é a versatilidade de design oferecida pela película PET
 
     <!-- ! login popup-->
     <!-- news popup-->
+    <script>
+document.querySelectorAll('.card-porta img').forEach(img => {
+    img.addEventListener('click', () => {
+        document.getElementById('lightbox-img').src = img.src;
+        document.getElementById('lightbox').style.display = 'flex';
+    });
+});
 
+document.getElementById('lightbox').addEventListener('click', () => {
+    document.getElementById('lightbox').style.display = 'none';
+});
+</script>
     <!-- ! news popup-->
     
     <script type="text/javascript" src="js/jquery.min.js"></script>
